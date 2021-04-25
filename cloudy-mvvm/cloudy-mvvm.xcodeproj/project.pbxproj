@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		1EAD6D172631C9C300C1718F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD6D162631C9C300C1718F /* AppDelegate.swift */; };
 		1EAD6D192631C9C300C1718F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD6D182631C9C300C1718F /* SceneDelegate.swift */; };
-		1EAD6D1B2631C9C300C1718F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD6D1A2631C9C300C1718F /* ViewController.swift */; };
-		1EAD6D1E2631C9C300C1718F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAD6D1C2631C9C300C1718F /* Main.storyboard */; };
 		1EAD6D202631C9C300C1718F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EAD6D1F2631C9C300C1718F /* Assets.xcassets */; };
 		1EAD6D232631C9C300C1718F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAD6D212631C9C300C1718F /* LaunchScreen.storyboard */; };
+		1ED8DF8B2634ACCA00A00AEF /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8DF8A2634ACCA00A00AEF /* DayViewController.swift */; };
+		1ED8DF8F2634B0C600A00AEF /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8DF8E2634B0C600A00AEF /* DayView.swift */; };
+		1ED8DF93263605EC00A00AEF /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8DF92263605EC00A00AEF /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EAD6D132631C9C300C1718F /* cloudy-mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloudy-mvvm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAD6D162631C9C300C1718F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EAD6D182631C9C300C1718F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1EAD6D1A2631C9C300C1718F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1EAD6D1D2631C9C300C1718F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EAD6D1F2631C9C300C1718F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EAD6D222631C9C300C1718F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EAD6D242631C9C300C1718F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED8DF8A2634ACCA00A00AEF /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		1ED8DF8E2634B0C600A00AEF /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		1ED8DF92263605EC00A00AEF /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		1EAD6D152631C9C300C1718F /* cloudy-mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				1ED8DF8D2634B0B400A00AEF /* Views */,
+				1ED8DF872634A18B00A00AEF /* View Controllers */,
 				1EAD6D162631C9C300C1718F /* AppDelegate.swift */,
 				1EAD6D182631C9C300C1718F /* SceneDelegate.swift */,
-				1EAD6D1A2631C9C300C1718F /* ViewController.swift */,
-				1EAD6D1C2631C9C300C1718F /* Main.storyboard */,
 				1EAD6D1F2631C9C300C1718F /* Assets.xcassets */,
 				1EAD6D212631C9C300C1718F /* LaunchScreen.storyboard */,
 				1EAD6D242631C9C300C1718F /* Info.plist */,
 			);
 			path = "cloudy-mvvm";
+			sourceTree = "<group>";
+		};
+		1ED8DF872634A18B00A00AEF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1ED8DF92263605EC00A00AEF /* RootViewController.swift */,
+				1ED8DF8A2634ACCA00A00AEF /* DayViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1ED8DF8D2634B0B400A00AEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1ED8DF8E2634B0C600A00AEF /* DayView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +145,6 @@
 			files = (
 				1EAD6D232631C9C300C1718F /* LaunchScreen.storyboard in Resources */,
 				1EAD6D202631C9C300C1718F /* Assets.xcassets in Resources */,
-				1EAD6D1E2631C9C300C1718F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +155,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EAD6D1B2631C9C300C1718F /* ViewController.swift in Sources */,
+				1ED8DF93263605EC00A00AEF /* RootViewController.swift in Sources */,
+				1ED8DF8F2634B0C600A00AEF /* DayView.swift in Sources */,
 				1EAD6D172631C9C300C1718F /* AppDelegate.swift in Sources */,
 				1EAD6D192631C9C300C1718F /* SceneDelegate.swift in Sources */,
+				1ED8DF8B2634ACCA00A00AEF /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1EAD6D1C2631C9C300C1718F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1EAD6D1D2631C9C300C1718F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1EAD6D212631C9C300C1718F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
